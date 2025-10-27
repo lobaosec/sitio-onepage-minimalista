@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-// Import all available fonts for AI usage
-import "../lib/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Criado com a Lasy",
-  description: "Projeto criado com Lasy AI",
+  title: "Plan de Adelgazamiento Inteligente - Julia IA",
+  description: "Evaluación nutricional personalizada con la Profesora y Nutricionista Julia (IA). Descubre tu perfil y recibe recomendaciones específicas para adelgazar de forma saludable.",
 };
 
 export default function RootLayout({
@@ -27,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="es">
       <head>
         <Script src="/lasy-bridge.js" strategy="beforeInteractive" />
       </head>
